@@ -24,7 +24,7 @@ public class NotificationService {
   }
 
   @EventListener
-  public void handlePaymentSucceeded(PaymentSucceededEvent paymentSucceededEvent) {
+  void handlePaymentSucceeded(PaymentSucceededEvent paymentSucceededEvent) {
     LOGGER.info(
         "Received PaymentSucceededEvent for order id: {}", paymentSucceededEvent.getOrderId());
 
