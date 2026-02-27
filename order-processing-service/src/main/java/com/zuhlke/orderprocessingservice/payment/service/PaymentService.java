@@ -28,7 +28,7 @@ public class PaymentService {
   }
 
   @EventListener
-  public void handleOrderCreated(OrderCreatedEvent orderCreatedEvent) {
+  void handleOrderCreated(OrderCreatedEvent orderCreatedEvent) {
     LOGGER.info("Received OrderCreatedEvent for order id: {}", orderCreatedEvent.getOrderId());
 
     Payment payment =
